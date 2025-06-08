@@ -8,30 +8,31 @@ int main()
     cin>>t;
     while(t--)
     {
-      long long int a,b,c,d;
-      cin>>a>>b>>c>>d;
-      if(b==d)
-      {
-          if(a>c)
-          {
-              cout<<"Gellyfish"<<endl;
+        long long int a,b,c,d;
+        cin>>a>>b>>c>>d;
+        if(a>=b && c>=b)
+        {
+            cout<<"Gellyfish"<<endl;
 
-          }
-          else
-          {
-              cout<<"Flower"<<endl;
+        }
+        else if(a<d)
+        {
 
-          }
-      }
-      else if(b>d)
-      {
-          cout<<"Gellyfish"<<endl;
-      }
-      else
-      {
-          cout<<"Flower"<<endl;
-      }
+            cout<<"Flower"<<endl;
+        }
+        else if(d<=c)
+        {
+            cout<<"Gellyfish"<<endl;
+
+        }
+        else
+        {
+            cout<<"Flower"<<endl;
+        }
 
     }
 }
+
+
+
 
