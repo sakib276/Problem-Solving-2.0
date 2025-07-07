@@ -8,7 +8,7 @@ int main()
     {
         int n;
         cin>>n;
-        int arr[n];
+       int arr[n];
         for(int i=0; i<n; i++)
         {
             cin>>arr[i];
@@ -21,13 +21,16 @@ int main()
         else
         {
             cout << "YES" << endl;
-            cout<<n-1<<endl;
-            for(int i=1;i<n;i++)
+            cout<<2<<endl;
+            for(int i=0;i<n-1;i++)
             {
-                cout<<arr[i]<<" ";
+                if(arr[i]>arr[i+1])
+                {
+                    cout<<arr[i]<<" "<<arr[i+1];
+                    break;
+                }
             }
             cout<<endl;
         }
     }
 }
-
